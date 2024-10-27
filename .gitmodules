@@ -1,0 +1,3 @@
+[submodule "Activite.Services.Infra"]
+	path = Activite.Services.Infra
+	url = https://github.com/qulad/Activite.Services.Infra.git
