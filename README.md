@@ -21,3 +21,6 @@ All services required for **Activite**
 | **Activite.Services.User.Api** | Not Started |
 | **Activite.Services.User.Predictor** | Not Started |
 | **Activite.Services.User.Scheduler** | Not Started |
+
+#### Diagram
+![micro service diagram](micro-service-diagram.png)
