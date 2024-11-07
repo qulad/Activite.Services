@@ -1,0 +1,24 @@
+[submodule "Activite.Services.Gateway"]
+	path = Activite.Services.Gateway
+	url = http://github.com/qulad/Activite.Services.Gateway.git
+[submodule "Activite.Services.Integration"]
+	path = Activite.Services.Integration
+	url = http://github.com/qulad/Activite.Services.Integration.git
+[submodule "Activite.Services.Mobile"]
+	path = Activite.Services.Mobile
+	url = http://github.com/qulad/Activite.Services.Mobile.git
+[submodule "Activite.Services.Mobile.Locations"]
+	path = Activite.Services.Mobile.Locations
+	url = http://github.com/qulad/Activite.Services.Mobile.Locations.git
+[submodule "Activite.Services.User"]
+	path = Activite.Services.User
+	url = http://github.com/qulad/Activite.Services.User.git
+[submodule "Activite.Services.User.Predictor"]
+	path = Activite.Services.User.Predictor
+	url = http://github.com/qulad/Activite.Services.User.Predictor.git
+[submodule "Activite.Services.Index"]
+	path = Activite.Services.Index
+	url = http://github.com/qulad/Activite.Services.Index.git
+[submodule "Activite.Services.Infra"]
+	path = Activite.Services.Infra
+	url = http://github.com/qulad/Activite.Services.Infra.git
