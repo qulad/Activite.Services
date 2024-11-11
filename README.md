@@ -28,3 +28,7 @@ All services required for **Activite**
 
 #### Diagram
 ![micro service diagram](micro-service-diagram.png)
+
+# TODO
+* fix diagram
+* update README.MD
