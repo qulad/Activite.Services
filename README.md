@@ -19,16 +19,12 @@ All services required for **Activite**
 
 | Name      | Status                                                  |
 |--------------|------------------------------------------------------|
-| **Activite.Services.Gateway** | Opened Repository |
-| **Activite.Services.Integration** | Opened Repository |
+| **Activite.Services.Gateway** | In Progress: Redo AuthentificationMiddleWare for Locations |
+| **Activite.Services.Integration** | In Progress: Added Google token auth endpoint |
 | **Activite.Services.Mobile.Locations** | Opened Repository |
 | **Activite.Services.Mobile** | Opened Repository |
-| **Activite.Services.User.Scheduler** | Opened Repository |
-| **Activite.Services.User** | Opened Repository |
+| **Activite.Services.User** | In Progress: Will add repositories and endpoints |
+| **Activite.Services.User.Predicator** | Opened Repository |
 
 #### Diagram
 ![micro service diagram](micro-service-diagram.png)
-
-# TODO
-* fix diagram
-* update README.MD
