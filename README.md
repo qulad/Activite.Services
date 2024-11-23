@@ -30,8 +30,17 @@ All services required for **Activite**
 ![micro service diagram](micro-service-diagram.png)
 
 ## TODO
-* Activite.Services.User: Add Queries
-* Activite.Services.User: Add Commands
-* Activite.Services.User: Add Endpoints
+* Activite.Services.User: Add Get Queries
+* Activite.Services.User: Register Get Queries to endpoints
+* Activite.Services.User: Add Get Multiple Queries
+* Activite.Services.User: Add Get Multiple Queries to endpoints
+* Activite.Services.User: Add Add Commands
+* Activite.Services.User: Add Add Commands to endpoints
+* Activite.Services.User: Add Update Commands
+* Activite.Services.User: Add Update Commands to endpoints
+* Activite.Services.User: Add Delete Commands
+* Activite.Services.User: Add Delete Commands to endpoints
 
 * Activite.Services.Gateway: Add specific endpoint restrictions
+
+* Weight the pros and cons about seperating Activite.Services.User to do project restrictions instead of endpoint restriction
