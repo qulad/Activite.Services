@@ -34,8 +34,6 @@ All services required for **Activite**
 * Activite.Services.User: Register Get Queries to endpoints
 * Activite.Services.User: Add Get Multiple Queries
 * Activite.Services.User: Add Get Multiple Queries to endpoints
-* Activite.Services.User: Add Add Commands
-* Activite.Services.User: Add Add Commands to endpoints
 * Activite.Services.User: Add Update Commands
 * Activite.Services.User: Add Update Commands to endpoints
 * Activite.Services.User: Add Delete Commands
