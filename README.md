@@ -19,12 +19,19 @@ All services required for **Activite**
 
 | Name      | Status                                                  |
 |--------------|------------------------------------------------------|
-| **Activite.Services.Gateway** | In Progress: Redo AuthentificationMiddleWare for Locations |
+| **Activite.Services.Gateway** | In Progress |
 | **Activite.Services.Integration** | In Progress: Added Google token auth endpoint |
 | **Activite.Services.Mobile.Locations** | Opened Repository |
 | **Activite.Services.Mobile** | Opened Repository |
-| **Activite.Services.User** | In Progress: Will add repositories and endpoints |
+| **Activite.Services.User** | In Progress: finished mongo documents |
 | **Activite.Services.User.Predicator** | Opened Repository |
 
 #### Diagram
 ![micro service diagram](micro-service-diagram.png)
+
+## TODO
+* Activite.Services.User: Add Queries
+* Activite.Services.User: Add Commands
+* Activite.Services.User: Add Endpoints
+
+* Activite.Services.Gateway: Add specific endpoint restrictions
