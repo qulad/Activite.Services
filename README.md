@@ -30,8 +30,6 @@ All services required for **Activite**
 ![micro service diagram](micro-service-diagram.png)
 
 ## TODO
-* Activite.Services.User: Add Get Queries
-* Activite.Services.User: Register Get Queries to endpoints
 * Activite.Services.User: Add Get Multiple Queries
 * Activite.Services.User: Add Get Multiple Queries to endpoints
 
