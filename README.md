@@ -19,7 +19,7 @@ All services required for **Activite**
 
 | Name      | Status                                                  |
 |--------------|------------------------------------------------------|
-| **Activite.Services.Gateway** | In Progress |
+| **Activite.Services.Gateway** | Testing |
 | **Activite.Services.Integration** | In Progress: Added Google token auth endpoint |
 | **Activite.Services.Mobile.Locations** | Opened Repository |
 | **Activite.Services.Mobile** | Opened Repository |
@@ -32,7 +32,7 @@ All services required for **Activite**
 ## TODO
 * Activite.Services.User: Switch to layered arcihetcture
 
-* Activite.Services.Gateway: Add specific endpoint restrictions
+* Activite.Services.Gateway: Make middleware for specifics endpoints (read from environment)
 
 * Weight the pros and cons about seperating Activite.Services.User to do project restrictions instead of endpoint restriction
 
