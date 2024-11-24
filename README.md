@@ -32,6 +32,7 @@ All services required for **Activite**
 ## TODO
 * Activite.Services.User: Add Get Multiple Queries
 * Activite.Services.User: Add Get Multiple Queries to endpoints
+* Activite.Services.User: Add logic when new user (create wallet)
 
 * Activite.Services.Gateway: Add specific endpoint restrictions
 
