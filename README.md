@@ -30,9 +30,8 @@ All services required for **Activite**
 ![micro service diagram](micro-service-diagram.png)
 
 ## TODO
-* Activite.Services.User: Add Get Multiple Queries
-* Activite.Services.User: Add Get Multiple Queries to endpoints
 * Activite.Services.User: Add logic when new user (create wallet)
+* Activite.Services.User: Switch to layered arcihetcture
 
 * Activite.Services.Gateway: Add specific endpoint restrictions
 
