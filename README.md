@@ -23,16 +23,17 @@ All services required for **Activite**
 | **Activite.Services.Integration** | In Progress: Added Google token auth endpoint |
 | **Activite.Services.Mobile.Locations** | Opened Repository |
 | **Activite.Services.Mobile** | Opened Repository |
-| **Activite.Services.User** | In Progress: finished mongo documents |
+| **Activite.Services.User** | Testing |
 | **Activite.Services.User.Predicator** | Opened Repository |
 
 #### Diagram
 ![micro service diagram](micro-service-diagram.png)
 
 ## TODO
-* Activite.Services.User: Add logic when new user (create wallet)
 * Activite.Services.User: Switch to layered arcihetcture
 
 * Activite.Services.Gateway: Add specific endpoint restrictions
 
 * Weight the pros and cons about seperating Activite.Services.User to do project restrictions instead of endpoint restriction
+
+* Figure out hosting in cloud
