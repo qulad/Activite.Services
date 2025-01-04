@@ -7,10 +7,12 @@ services:
       - "27017:27017"
     volumes:
       - mongo_data:/data/db
+      - ./init-mongo.sh:/docker-entrypoint-initdb.d/init-mongo.sh  # Ensure this script runs to create the user
     environment:
       MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
       MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
-
+    networks:
+      - docker-network
 
   consul:
     image: consul:1.15.4
@@ -69,7 +71,6 @@ services:
       - "host.docker.internal:host-gateway"
     networks:
       - docker-network
-
 
 networks:
   docker-network:
