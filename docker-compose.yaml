@@ -7,8 +7,10 @@ services:
       - "27017:27017"
     volumes:
       - mongo_data:/data/db
-    env_file:
-      - .env
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
+
 
   consul:
     image: consul:1.15.4
@@ -45,8 +47,6 @@ services:
       - "host.docker.internal:host-gateway"
     networks:
       - docker-network
-    ports:
-      - "5000:5000"
 
   user:
     image: temp804/user:latest
@@ -79,5 +79,3 @@ volumes:
   mongo_data:
   consul_data:
   seq_data:
-  grafana_data:
-  influxdb_data:
