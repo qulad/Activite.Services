@@ -7,9 +7,8 @@ services:
       - "27017:27017"
     volumes:
       - mongo_data:/data/db
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
-      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
+    env_file:
+      - .env
 
   consul:
     image: consul:1.15.4
@@ -41,7 +40,7 @@ services:
     ports:
       - "5000:5000"
     env_file:
-      - .env.gateway
+      - .env
     networks:
       - docker-network
 
@@ -51,7 +50,7 @@ services:
     ports:
       - "5002:5002"
     env_file:
-      - .env.user
+      - .env
     networks:
       - docker-network
 

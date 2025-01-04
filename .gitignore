@@ -1,4 +1,3 @@
 *.drawio
 *.docx
-.env.gateway
-.env.user
+.env
