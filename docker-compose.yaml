@@ -1,0 +1,76 @@
+name: ${CONTAINER_NAME}
+services:
+  mongo:
+    image: mongo:8.0.4-rc0
+    container_name: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
+
+  consul:
+    image: consul:1.15.4
+    container_name: consul
+    ports:
+      - "8500:8500"
+    networks:
+      - docker-network
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - consul_data:/consul/data
+
+  seq:
+    image: datalust/seq:2024.3
+    container_name: seq
+    ports:
+      - "5341:80"
+    environment:
+      ACCEPT_EULA: "Y"
+    volumes:
+      - seq_data:/data
+    networks:
+      - docker-network
+
+  gateway:
+    image: temp804/gateway:latest
+    container_name: gateway
+    ports:
+      - "5000:5000"
+    env_file:
+      - .env.gateway
+    networks:
+      - docker-network
+
+  user:
+    image: temp804/user:latest
+    container_name: user
+    ports:
+      - "5002:5002"
+    env_file:
+      - .env.user
+    networks:
+      - docker-network
+
+  integration:
+    image: temp804/integration:latest
+    container_name: integration
+    ports:
+      - "5001:5001"
+    networks:
+      - docker-network
+
+
+networks:
+  docker-network:
+    driver: bridge
+
+volumes:
+  mongo_data:
+  consul_data:
+  seq_data:
+  grafana_data:
+  influxdb_data:
