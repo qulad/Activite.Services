@@ -45,6 +45,8 @@ services:
       - "host.docker.internal:host-gateway"
     networks:
       - docker-network
+    ports:
+      - "5000:5000"
 
   user:
     image: temp804/user:latest
