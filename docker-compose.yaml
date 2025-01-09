@@ -48,6 +48,7 @@ services:
       - "host.docker.internal:host-gateway"
     networks:
       - docker-network
+      - localhost:127.0.0.1
 
   user:
     image: temp804/user:latest
@@ -60,6 +61,7 @@ services:
       - "host.docker.internal:host-gateway"
     networks:
       - docker-network
+      - localhost:127.0.0.1
 
   integration:
     image: temp804/integration:latest
@@ -70,6 +72,7 @@ services:
       - "host.docker.internal:host-gateway"
     networks:
       - docker-network
+      - localhost:127.0.0.1
 
 networks:
   docker-network:
