@@ -51,6 +51,7 @@ services:
       - "localhost:127.0.0.1"
     networks:
       - docker-network
+    command: ["dotnet", "GatewayService.dll", "--urls", "http://localhost:5000"]
 
   user:
     image: temp804/user:latest
@@ -66,6 +67,7 @@ services:
       - "localhost:127.0.0.1"
     networks:
       - docker-network
+    command: ["dotnet", "UserService.dll", "--urls", "http://localhost:5002"]
 
   integration:
     image: temp804/integration:latest
@@ -81,6 +83,7 @@ services:
       - "localhost:127.0.0.1"
     networks:
       - docker-network
+    command: ["dotnet", "IntegrationService.dll", "--urls", "http://localhost:5001"]
 
 networks:
   docker-network:
