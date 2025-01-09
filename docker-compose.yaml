@@ -42,6 +42,8 @@ services:
     container_name: gateway
     ports:
       - "80:5000"
+    environment:
+      - ASPNETCORE_URLS=http://localhost:5000
     env_file:
       - .env
     extra_hosts:
@@ -55,6 +57,8 @@ services:
     container_name: user
     ports:
       - "5002:5002"
+    environment:
+      - ASPNETCORE_URLS=http://localhost:5002
     env_file:
       - .env
     extra_hosts:
@@ -68,6 +72,10 @@ services:
     container_name: integration
     ports:
       - "5001:5001"
+    environment:
+      - ASPNETCORE_URLS=http://localhost:5001
+    env_file:
+      - .env
     extra_hosts:
       - "host.docker.internal:host-gateway"
       - "localhost:127.0.0.1"
