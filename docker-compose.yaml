@@ -46,10 +46,9 @@ services:
       - .env
     extra_hosts:
       - "host.docker.internal:host-gateway"
-      - localhost:127.0.0.1
+      - "localhost:127.0.0.1"
     networks:
       - docker-network
-      - localhost:127.0.0.1
 
   user:
     image: temp804/user:latest
@@ -59,8 +58,8 @@ services:
     env_file:
       - .env
     extra_hosts:
-      - host.docker.internal:host-gateway
-      - localhost:127.0.0.1
+      - "host.docker.internal:host-gateway"
+      - "localhost:127.0.0.1"
     networks:
       - docker-network
 
@@ -70,11 +69,10 @@ services:
     ports:
       - "5001:5001"
     extra_hosts:
-      - host.docker.internal:host-gateway
-      - localhost:127.0.0.1
+      - "host.docker.internal:host-gateway"
+      - "localhost:127.0.0.1"
     networks:
       - docker-network
-      - localhost:127.0.0.1
 
 networks:
   docker-network:
